@@ -1,20 +1,65 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🌈 Sihirli Bulmaca Bahçesi  
+### 5–6 Yaş Grubu İçin Yapay Zekâ Destekli Eğitsel Oyun
 
-# Run and deploy your AI Studio app
+Bu proje, okul öncesi ve BİLSEM hazırlık seviyesindeki çocuklara yönelik hazırlanmış,  
+**Google AI Studio** destekli interaktif bir eğitim oyunudur.  
+Çocuklar okuma yazma bilmeden oynayabilir, tamamen görsel ve sezgisel olarak yönlendirilir.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/1qbRP7ibO_rpY_ysduICzbYECH07kXfCo
+## ✨ Özellikler
 
-## Run Locally
+### 🧚‍♀️ **1) Karakter Oluşturma (Sesle & Çizerek)**
+- Çocuk karakterin adını söyleyebilir veya yazabilir  
+- Karakteri sesle tarif edebilir  
+- Alternatif olarak çizim yapıp “çizimden karakter oluştur” seçeneğini kullanabilir  
+- Google AI Studio bu tariften / çizimden **pastel, 3D, sihirli bahçe temalı** bir karakter üretir  
+- Karakterler kaydedilir ve tüm mini oyunlarda kullanılabilir  
 
-**Prerequisites:**  Node.js
+---
 
+### 🎨 **2) Mini Oyunlar (10 Farklı BİLSEM Seviyesi Etkinlik)**
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+| Oyun | Açıklama | Kazanım |
+|------|----------|---------|
+| **🔐 Şifre Oyunu** | Çocuğun kendi karakterleriyle görsel şifre çözme | Mantık, eşleştirme |
+| **🧊 Küp Açılımı** | 2D küp açılımını doğru 3D küpe eşleştirme | Uzamsal düşünme |
+| **🟦 Örüntü Tamamlama** | Eksik görseli bulma | Sekans mantığı |
+| **📖 Hikâye Oluşturma** | 3 resme göre çocuk hikâye kurar | Dil gelişimi |
+| **🖌️ Boyama** | Çocuğun kendi karakterini renklendirmesi | Yaratıcılık |
+| **🐰 Hafıza Oyunu** | Hayvanlı hafıza eşleme kartları | Görsel hafıza |
+| **🧩 Puzzle** | 3D puzzle sürükle–bırak oyunu | Problem çözme |
+| **🔍 5 Fark Bul** | İki resim arasındaki 5 farkı bulma | Dikkat |
+| **🧭 Yön Oyunu** | Tavşanı doğru yöne yönlendirme | Mekânsal zeka |
+| **🎬 Video Oluşturma** | Çocuğun söylediği cümleyi 3 karelik mini videoya çevirme | İfade becerisi |
+
+Tüm görseller Google AI Studio ile üretilmiştir.
+
+---
+
+## 🌟 Tasarım Felsefesi
+- Pastel renkler  
+- Sihirli Bahçe teması  
+- 3D yumuşak çizimler  
+- Büyük butonlar  
+- Sade arayüz  
+- Çocuk dostu parlak ve canlı animasyonlar  
+- Okuma yazma bilmeyen çocuklar için tamamen görsel yönlendirme  
+
+---
+
+## 🧠 Teknolojiler
+
+| Teknoloji | Amaç |
+|----------|------|
+| **React + TypeScript** | Arayüz geliştirme |
+| **Vite** | Hızlı build & geliştirme |
+| **Google AI Studio** | Karakter, video ve oyun görselleri üretme |
+| **TailwindCSS** | Tasarım |
+| **Canvas API** | Çizim ve boyama ekranı |
+
+---
+
+## 🎞️ Tanıtım Videosu (YouTube)  
+🔗 https://youtu.be/OVnNqJBotYs
+
