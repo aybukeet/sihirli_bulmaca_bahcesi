@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Copy of Copy of SİHİRLİ BULMAACA BAHÇESİ",
+  "description": "5-6 yaş çocuklar için ses kontrollü, orman temalı, karakter oluşturmalı eğitici oyun.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

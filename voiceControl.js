@@ -1,0 +1,1 @@
+// This file is cleared. Voice logic is now handled inside CharacterCreator.tsx component.

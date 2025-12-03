@@ -1,0 +1,111 @@
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
+    "react/jsx-runtime": "https://aistudiocdn.com/react@^19.2.0/jsx-runtime",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Sihirli Bulmaca Bahçesi ✨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        font-family: 'Fredoka', sans-serif;
+        overflow: hidden; /* STRICTLY PREVENT SCROLLING */
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #fff0f5;
+        overscroll-behavior: none;
+      }
+
+      /* --- MAGIC GARDEN BACKGROUND --- */
+      .magic-bg {
+        background: radial-gradient(circle at 50% 50%, #fdf2f8 0%, #f0fdf4 40%, #eff6ff 80%);
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+      
+      /* Garden Border at Bottom */
+      .garden-border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 140px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23dcfce7' fill-opacity='1' d='M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 5;
+        pointer-events: none;
+        opacity: 0.9;
+      }
+
+      /* --- TYPOGRAPHY --- */
+      .magic-title {
+        font-family: 'Pacifico', cursive;
+        background: linear-gradient(to right, #ec4899, #a855f7, #3b82f6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(4px 4px 0px rgba(255, 255, 255, 0.9));
+        padding-bottom: 0.2em;
+      }
+
+      /* --- ANIMATIONS --- */
+      .animate-float { animation: float 6s ease-in-out infinite; }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+
+      .animate-bounce-slow { animation: bounceSlow 4s infinite; }
+      @keyframes bounceSlow {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+
+      .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      /* Floating Particles (Simplified for performance) */
+      .particle {
+        position: absolute;
+        bottom: -20px;
+        width: 12px;
+        height: 12px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        animation: rise 15s infinite ease-in;
+        pointer-events: none;
+        box-shadow: 0 0 10px rgba(255,255,255,0.5);
+      }
+      @keyframes rise {
+        0% { bottom: -20px; transform: translateX(0); opacity: 0; }
+        20% { opacity: 0.8; }
+        100% { bottom: 100vh; transform: translateX(50px); opacity: 0; }
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
